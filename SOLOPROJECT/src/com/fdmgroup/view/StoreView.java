@@ -39,11 +39,10 @@ public class StoreView {
 	public void enterStore() {
 		System.out.println("Watchu need " + UserSession.getLoggedInUser().getFirstname() + " "
 				+ UserSession.getLoggedInUser().getLastname() + "!");
-<<<<<<< HEAD
+
 		storeController.displayCards();
 		
-=======
->>>>>>> 47f17ff4d9fc89897d2fb70a03f77dd9acf1a184
+
 		System.out.println("Please select one of the options below: ");
 		System.out.println("1) Exit Store");
 		System.out.println("2) Buy Card");
@@ -56,13 +55,11 @@ public class StoreView {
 			storeController.exitStore();
 			break;
 		case "2":
-<<<<<<< HEAD
+
 			System.out.println("Enter Card ID to buy: ");
 			int cardID = scanner.nextInt();
 			storeController.buyCard(cardID,UserSession.getLoggedInUser().getId());
-=======
 
->>>>>>> 47f17ff4d9fc89897d2fb70a03f77dd9acf1a184
 			break;
 		case "3":
 

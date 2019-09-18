@@ -11,7 +11,9 @@ public class CardCollectionDao implements ICardDao{
 		super();
 		cards = new ArrayList<>();
 		cards.add(new Card("Card_1"));
+		cards.get(0).setCardID(1);
 		cards.add(new Card("Card_2"));
+		cards.get(1).setCardID(2);
 	}
 	@Override
 	public Card create(Card card) {
@@ -34,8 +36,7 @@ public class CardCollectionDao implements ICardDao{
 	}
 	@Override
 	public List<Card> findAll() {
-		// TODO Auto-generated method stub
-		return null;
+		return cards;
 	}
 	@Override
 	public Card update(Card card) {
@@ -53,8 +54,7 @@ public class CardCollectionDao implements ICardDao{
 		if (card.getCardActions()!= null && card.getCardActions().size()!=0) {
 			foundCard.setCardName(card.getCardName());
 		}
-		
-		
+			
 		return foundCard;
 	}
 	@Override

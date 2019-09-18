@@ -1,5 +1,7 @@
 package com.fdmgroup.model;
 
+import java.util.*;
+
 import com.fdmgroup.util.IdGenerator;
 
 public class User implements IStorable {
@@ -9,6 +11,7 @@ public class User implements IStorable {
 	private String password;
 	private String firstname;
 	private String lastname;
+	private List<Card> userCards = new ArrayList<>();
 	
 	public User() {
 		super();
@@ -65,6 +68,12 @@ public class User implements IStorable {
 
 	public void setLastname(String lastname) {
 		this.lastname = lastname;
+	}
+	public void addCard(Card card) {
+		userCards.add(card);
+	}
+	public void removeCard(Card card) {
+		userCards.remove(card);
 	}
 
 	@Override

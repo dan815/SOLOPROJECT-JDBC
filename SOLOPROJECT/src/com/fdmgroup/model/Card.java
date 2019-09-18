@@ -63,5 +63,11 @@ public void setCardName(String cardName) {
 	this.cardName = cardName;
 }
 
+@Override
+public String toString() {
+	return "Card [cardID=" + cardID + ", cardType=" + cardType + ", rarity=" + rarity + ", cardActions=" + cardActions
+			+ ", cardName=" + cardName + "]";
+}
+
 
 }

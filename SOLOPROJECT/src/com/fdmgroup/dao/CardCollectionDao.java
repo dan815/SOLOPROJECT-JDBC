@@ -53,8 +53,7 @@ public class CardCollectionDao implements ICardDao{
 		if (card.getCardActions()!= null && card.getCardActions().size()!=0) {
 			foundCard.setCardName(card.getCardName());
 		}
-		
-		
+			
 		return foundCard;
 	}
 	@Override

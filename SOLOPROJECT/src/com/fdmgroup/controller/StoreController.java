@@ -1,8 +1,11 @@
 package com.fdmgroup.controller;
 
 import com.fdmgroup.dao.*;
+<<<<<<< HEAD
 import com.fdmgroup.model.Card;
 import com.fdmgroup.model.User;
+=======
+>>>>>>> 47f17ff4d9fc89897d2fb70a03f77dd9acf1a184
 import com.fdmgroup.view.*;
 
 public class StoreController {
@@ -57,6 +60,7 @@ public class StoreController {
 		dashboardView.showDashboard();
 		
 	}
+<<<<<<< HEAD
 	public void displayCards() {
 		for(Card card : cardDao.findAll()) {
 			System.out.println(card);
@@ -79,4 +83,10 @@ public class StoreController {
 	}
 
 	
+=======
+
+	
+	
+	
+>>>>>>> 47f17ff4d9fc89897d2fb70a03f77dd9acf1a184
 }
